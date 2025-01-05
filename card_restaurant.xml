@@ -1,0 +1,168 @@
+<!--<androidx.cardview.widget.CardView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="8dp"-->
+<!--    app:cardCornerRadius="16dp"-->
+<!--    app:cardElevation="6dp"-->
+<!--    android:clickable="true"-->
+<!--    android:focusable="true"-->
+<!--    android:foreground="?attr/selectableItemBackground">-->
+
+<!--<RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp">-->
+
+<!--        &lt;!&ndash; Restaurant Image &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/restaurant_image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="220dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/uae" />-->
+
+<!--        &lt;!&ndash; Save Icon (Bookmark) &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/save_icon"-->
+<!--            android:layout_width="28dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_margin="12dp"-->
+<!--            android:src="@drawable/baseline_bookmark_24"-->
+<!--            android:contentDescription="Save" />-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/restaurant_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uae"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/save_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/baseline_bookmark_24"
+            android:contentDescription="Save"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <!-- Rating Tag -->
+        <TextView
+            android:id="@+id/rating_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rating_background"
+            android:text="3.8★"
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/restaurant_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Time and Distance -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/restaurant_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp">
+
+            <!-- Clock Icon -->
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/baseline_access_time_24"
+                android:contentDescription="Time Icon" />
+
+            <!-- Time Text -->
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="25 mins"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp" />
+
+            <!-- Dot Separator -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <!-- Distance Text -->
+            <TextView
+                android:id="@+id/distance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 km"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Restaurant Name -->
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Hut"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/restaurant_image"
+            android:layout_marginTop="8dp" />
+
+        <!-- Restaurant Details -->
+        <TextView
+            android:id="@+id/restaurant_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurant_name"
+            android:text="Pizza . Fast Food | ₹250 for one"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <!-- Restaurant Offer -->
+        <TextView
+            android:id="@+id/restaurant_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat 50% OFF"
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+
+            android:layout_below="@id/restaurant_details"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

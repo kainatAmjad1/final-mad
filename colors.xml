@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="red2">#FF0000</color>
+    <color name="gray_heading">#7A7979</color>
+
+    <color name="dark_blue">#1E90FF</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Purple -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Dark Purple -->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightRed">#F44355</color><!-- Added red color -->
+    <color name="green">#008631</color>
+    <color name="beautiful_green">#068E0F</color>
+
+    <color name="button_color">#A20F58</color> <!-- Dark Pink -->
+    <color name="purple">#F5351645</color> <!-- Dark Pink -->
+    <color name="button_text_color">#A0890D</color> <!-- Golden -->
+    <color name="button_border_color">#A0890D</color> <!-- Golden for border -->
+
+</resources>

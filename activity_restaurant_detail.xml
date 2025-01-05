@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Restaurant Details Section -->
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/detail_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" />
+
+    <!-- Offer Tag (Blue Color and styled) -->
+    <TextView
+        android:id="@+id/detail_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Flat 50% OFF"
+        android:textSize="14sp"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="start"
+        android:textStyle="bold"/>
+
+    <!-- Time and Rating Section (Left aligned with clock icon and rating banner) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="start">
+
+        <!-- Time with Clock Icon -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/baseline_time"
+            android:contentDescription="Time Icon"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 mins"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Dot Separator -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" • "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Rating Tag (Green Banner) -->
+        <TextView
+            android:id="@+id/detail_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5★"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rating_background"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:padding="4dp"
+        android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detail_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" />
+
+    <!-- Restaurant Items Section -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

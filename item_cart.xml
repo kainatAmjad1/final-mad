@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Cart Item Image with Rounded Corners -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cart_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedImageShape"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Cart Item Image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/cart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cart_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/cart_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Increase/Decrease Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <Button
+                android:id="@+id/increase_quantity_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="24sp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/decrease_quantity_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="24sp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Remove Button -->
+        <Button
+            android:id="@+id/remove_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Remove"
+            android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_red_button"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</LinearLayout>

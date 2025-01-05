@@ -1,0 +1,50 @@
+<!-- res/menu/drawer_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Food Orders section -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/baseline_shopping_bag_24"
+            android:title="Your Orders" />
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/baseline_favorite_24"
+            android:title="Favorite Orders" />
+
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/baseline_library_books_24"
+            android:title="Address Book" />
+
+        <item
+            android:id="@+id/nav_hidden"
+            android:icon="@drawable/baseline_hide_source_24"
+            android:title="Hidden Restaurants" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/baseline_book_online_24"
+            android:title="Online Ordering Help" />
+    </group>
+
+    <!-- More section -->
+    <group>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_info_outline_24"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/baseline_error_outline_24"
+            android:title="Send Feedback" />
+
+        <item
+            android:id="@+id/nav_emergency"
+            android:icon="@drawable/baseline_feed_24"
+            android:title="Report a safety emergency" />
+    </group>
+
+</menu>
